@@ -1,0 +1,69 @@
+type Mutation {
+    registrarUsuario(
+        dados:UsuarioRegistrarInput!
+    ):Usuario!
+
+    novoUsuario(
+       dados: UsuarioInput!
+    ):Usuario!
+
+    excluirUsuario( 
+        filtro: UsuarioFiltro!
+    ): Usuario
+
+    alterarUsuario(
+        dados: UsuarioInput!
+        filtro: UsuarioFiltro!
+    ): Usuario
+
+     # Mutations de Perfil
+    novoPerfil(
+        dados: PerfilInput!
+    ): Perfil!
+
+    excluirPerfil(
+        filtro: PerfilFiltro!
+    ): Perfil
+
+    alterarPerfil(
+        filtro: PerfilFiltro!
+        dados: PerfilInput!
+    ): Perfil
+
+    novoPlano(
+        dados: PlanoInput!
+    ): Plano
+
+    alterarPlano(
+        filtro: PlanoFiltro!
+        dados: PlanoInput!
+    ): Plano
+
+    excluirPlano(
+        filtro: PlanoFiltro!
+    ): Plano
+
+    novoSchedule(
+        dados: ScheduleInput!
+    ): Schedule
+
+    alterarSchedule(
+        filtro: ScheduleFiltro!
+        dados: ScheduleInput!
+    ): Schedule
+
+    excluirSchedule(
+        filtro: ScheduleFiltro!
+    ): Schedule
+    novoPesquisado(
+        dados: PesquisadoInput!
+    ): Pesquisado
+    novaPesquisa(
+        dados: PesquisaInput!
+    ): Pesquisa
+    novaResposta(
+        dados: RespostaInput!
+    ): Resposta
+}
+
+

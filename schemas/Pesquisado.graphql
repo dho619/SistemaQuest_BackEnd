@@ -1,0 +1,23 @@
+type Pesquisado {
+    id: Int!
+    nome: String!
+    email: String!
+    telefone: String!
+    inicioAvaliacao: String!
+    inicioAvaliacaoFormatado: String!
+    pesquisa: Pesquisa
+}
+
+input PesquisadoInput {
+    nome: String!
+    email: String!
+    telefone: String!
+}
+
+input PesquisadoFiltro {
+    id: Int
+}
+
+input PesquisadoFiltroChave {
+    chave: String
+}

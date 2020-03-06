@@ -1,0 +1,23 @@
+# Pontos de entrada da API
+type Query {
+    login(dados: UsuarioLoginInput): Usuario
+    usuarios: [Usuario]!
+    usuario(filtro: UsuarioFiltro!): Usuario
+    perfis: [Perfil]!
+    perfil(filtro: PerfilFiltro!): Perfil
+    questionarios: [Questionario]!
+    listarQuestionarios: [Questionario]!
+    questionario(filtro: QuestionarioFiltro!): Questionario
+    planos: [Plano]!
+    planosUsuario(filtro: UsuarioFiltro!): [Plano]!
+    plano(filtro: PlanoFiltro!): Plano
+    schedules: [Schedule]!
+    schedule(filtro: ScheduleFiltro!): Schedule
+    schedulesUsuario(filtro: UsuarioFiltro!): [Schedule]!
+    pesquisas: [Pesquisa]!
+    pesquisa(filtro: PesquisaFiltro!): Pesquisa
+    pesquisaChave(filtro: PesquisaFiltroChave!): [Pesquisa]!
+    pesquisados: [Pesquisado]!
+    pesquisado(filtro: PesquisadoFiltro!): Pesquisado
+    pesquisadoChave(filtro: PesquisadoFiltroChave!): [Pesquisado]!
+}

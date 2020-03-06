@@ -1,0 +1,24 @@
+{
+  "name": "backend-web",
+  "version": "1.0.0",
+  "description": "Servidor da aplicacao Web",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ext js,graphql"
+  },
+  "keywords": [],
+  "author": "Geovane Barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "bcrypt-nodejs": "0.0.3",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "graphql-import": "^0.7.1",
+    "jwt-simple": "^0.5.6",
+    "node-firebird": "^0.8.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

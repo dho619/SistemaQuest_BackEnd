@@ -1,0 +1,29 @@
+type Schedule {
+    id: Int!
+    desc: String!
+    dataInicio: String!
+    dataFim: String!
+    dataInicioFormatada: String
+    dataFimFormatada: String
+    usuario_id: Int!
+    questionario_id: Int!
+    chave: String!
+    ativo: Boolean
+    created_at: String
+    updated_at: String
+    usuario: Usuario
+    questionario: Questionario
+}
+
+input ScheduleInput {
+    desc: String
+    dataInicio: String
+    dataFim: String
+    usuario_id: Int
+    questionario_id: Int
+}
+
+input ScheduleFiltro {
+    id: Int
+    chave: String
+}

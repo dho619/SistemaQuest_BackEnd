@@ -1,0 +1,22 @@
+type Pesquisa {
+    id: Int!
+    chave: String!
+    pesquisado_id: Int!
+    resultado: String
+    pesquisado: Pesquisado
+    questionario: Questionario
+    respostas: [Resposta]
+}
+input PesquisaInput {
+    pesquisado_id: Int
+    chave: String
+}
+
+input PesquisaFiltro {
+    id: Int
+    pesquisado_id: Int
+}
+
+input PesquisaFiltroChave {
+    chave: String
+}

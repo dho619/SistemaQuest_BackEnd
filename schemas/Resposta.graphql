@@ -1,0 +1,19 @@
+type Resposta {
+    id: Int!
+    pesquisa_id: Int!
+    pergunta_id: Int!
+    resposta: String!
+    valor: Int
+}
+
+input RespostaInput {
+    pesquisa_id: Int!
+    pergunta_id: Int!
+    resposta: String!
+}
+
+# input RespostaFiltro {
+#     id: Int
+#     pesquisa_id: Int
+#     pergunta_id: Int
+# }

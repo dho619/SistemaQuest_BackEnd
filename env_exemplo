@@ -1,0 +1,11 @@
+NODE_ENV=development
+
+#CONEXAO DE BANCO Firebird
+db_host= '127.0.0.1'
+db_port= porta
+db_database= 'caminho banco'
+db_user= 'usuario'
+db_password= 'senha banco'
+
+#JWT
+APP_AUTH_SECRET=escolher uma chave do token

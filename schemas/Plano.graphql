@@ -1,0 +1,28 @@
+type Plano {
+    id: Int!
+    usuario_id: Int!
+    data_Inicio: String!
+    data_Fim: String
+    unidades: Int
+    unid_Consumidas: Int
+    ativo: Boolean
+    questionarios: [Questionario]
+}
+
+type Quest_Plano {
+    id: Int!
+    plano_id: Int!
+    questionario_id: Int!
+}
+
+input PlanoFiltro {
+    id: Int
+    usuario_id: Int
+}
+
+input PlanoInput {
+    usuario_id: Int!
+    data_Fim: String
+    unidades: Int
+    questionarios: [QuestionarioFiltro]!
+}
