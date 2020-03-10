@@ -25,7 +25,7 @@ module.exports = {
         //pegando schedule
         const schedule = await obterSchedule(_,{filtro})
         //verificar se a chave buscada, pertence ao usuario que esta logado
-        ctx && ctx.validarUsuarioFiltro({id: schedule.usuario_id})
+        ctx && ctx.validarUsuarioFiltro({id: schedule.USUARIO_ID})
         return executaSQL(`SELECT p.* from PESQUISADOS p
                             inner join PESQUISAS pq on pq.PESQUISADO_ID = p.ID
                             where pq.CHAVE = ?`, [filtro.chave])

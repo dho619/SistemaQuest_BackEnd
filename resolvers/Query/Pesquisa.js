@@ -1,5 +1,4 @@
 const { executaSQL } = require('../../data/conexao')
-const {schedule: obterSchedule} = require('./Schedule')
 
 module.exports = {
     pesquisas(parent, args, ctx){

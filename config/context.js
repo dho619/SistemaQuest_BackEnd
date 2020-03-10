@@ -50,9 +50,9 @@ module.exports = async ({req}) => {
             //se no filtro nao tem id  e nem email
             if(!id && !email) throw err
             //se id setado, mas diferente do logado
-            if(id && id !== usuario.id) throw err
+            if(id && id !== usuario.ID) throw err
             //se email setado, mas diferente do logado
-            if(email && email !== usuario.email) throw err
+            if(email && email !== usuario.EMAIL) throw err
         }
     }
 }
