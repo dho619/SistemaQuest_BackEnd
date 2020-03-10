@@ -21,6 +21,6 @@ const server = new ApolloServer({
 
 
 //Iniciando o Servidor - Se nada e passado pro listen, entao ele executa na porta 4000
-server.listen().then(( { url }) => {
+server.listen(process.env.PORT || 4000).then(( { url }) => {
     console.log(`Executando em ${url}`)
 })
