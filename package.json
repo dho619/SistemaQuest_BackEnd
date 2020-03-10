@@ -4,7 +4,8 @@
   "description": "Servidor da aplicacao Web",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ext js,graphql"
+    "start": "nodemon --ext js,graphql",
+    "prod": "node index.js"
   },
   "keywords": [],
   "author": "Geovane Barbosa",
